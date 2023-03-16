@@ -4,17 +4,17 @@
        "title":"Alfajor de Dulce de Leche",
        "category":"Dulce de Leche",
        "description":"Alfajor de Dulce de Leche",
-       "image":"../src/assets/image/negro.webp",
-       "price":2000,
-       "stock":3
+       "image":"../../src/assets/images/Alfajor de Dulce de Leche.png",
+       "price":300,
+       "stock":1
     },
     {
        "id":2,
        "title":"Alfajor de Membrillo",
        "category":"Membrillo",
        "description":"Alfajor de Membrillo",
-       "image":"",
-       "price":1500,
+       "image":"../../src/assets/images/Alfajor de Membrillo.png",
+       "price":250,
        "stock":3
     },
     {
@@ -22,26 +22,26 @@
        "title":"Alfajor de Alcayota",
        "category":"Alcayota",
        "description":"Alfajor de Membrillo",
-       "image":"../public/curtis.jpg",
-       "price":3000,
-       "stock":3
+       "image":"../../src/assets/images/Alfajor de Alcayota.png",
+       "price":200,
+       "stock":4
     },
     {
         "id":4,
         "title":"Alfajor Blanco de Membrillo",
         "category":"Membrillo",
         "description":"Alfajor Blanco de Membrillo",
-        "image":"../public/cardin.png",
-        "price":5000,
-        "stock":3
+        "image":"../../src/assets/images/Alfajor Blanco de Membrillo.png",
+        "price":250,
+        "stock":5
     },
     {
         "id":5,
         "title":"Alfajor Blanco de Alcayota",
         "category":"Alcayota",
         "description":"Alfajor Blanco de Alcayota",
-        "image":"../public/tomografia.png",
-        "price":2500,
-        "stock":3
+        "image":"../../src/assets/images/Alfajor Blanco de Alcayota.png",
+        "price":200,
+        "stock":4
     }
 ]

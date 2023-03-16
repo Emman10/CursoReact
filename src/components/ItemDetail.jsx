@@ -15,6 +15,7 @@ const ItemDetail = ({alfajores}) => {
         id_filter.map((alfajor) => {
           return (
           <div key={alfajor.id}>
+            console.log(alfajor);
             <Card
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
