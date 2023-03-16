@@ -4,7 +4,7 @@ import Data from "../../data.json"
 import ItemList from './ItemList'
 
 const ItemListContainer = () => {
-  const [books, setAlfa] = useState([])
+  const [alfajores, setAlfa] = useState([])
   const {category} = useParams()
 
   const getData = () => {
@@ -16,14 +16,14 @@ const ItemListContainer = () => {
   }
 
   useEffect(() => {
-      getData().then((books) => setAlfa(books))
+      getData().then((alfajores) => setAlfa(alfajores))
     },[])
     
-  const categoryFilter = books.filter((book) => book.category === category);
+  const categoryFilter = alfajores.filter((alfajor) => alfajor.category === category);
 
   return (
     <div>
-      {category ? <ItemList books={categoryFilter}/> : <ItemList books={books}/>}
+      {category ? <ItemList alfajores={categoryFilter}/> : <ItemList alfajores={alfajores}/>}
     </div>
   )
 }

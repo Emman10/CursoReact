@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@
     align-items: center;
 }
 .brand {
-    font-family: 'Mynerve', cursive;
+    font-family: "Poppins";
     font-size: 2rem;
 }
 .NavBarContainer {
@@ -23,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    background-color:#f9e79f;
+    background-color: lightblue;
 }
 .cartContainer {
     display: flex;

@@ -16,10 +16,10 @@ const NavBar = () => {
         <h1 className='brand'>Alfajores Jorgito</h1>
         </Link>
         <Link to="/catalogue">
-        <Button colorScheme='blue'>Catálogo</Button>
+        <Button color='blue.600'>Catálogo</Button>
         </Link>
         <Menu>
-            <MenuButton as={Button} colorScheme='blue'>Categorías</MenuButton>
+            <MenuButton as={Button} color='blue.600'>Categorías</MenuButton>
             <MenuList>
                 <Link to={`/category/${"Dulce de Leche"}`}>
                 <MenuItem >

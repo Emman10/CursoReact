@@ -1,19 +1,19 @@
 import React from 'react'
 import Item from './Item';
 
-const ItemList = ({books}) => {
+const ItemList = ({alfajores}) => {
   return (
     <div className="cardsContainer">
       {
-        books.map((book) => {
+        alfajores.map((alfajor) => {
           return (
             <Item
-            key={book.id}
-            id={book.id}
-            title={book.title}
-            category={book.category}
-            img={book.image}
-            price={book.price}
+            key={alfajor.id}
+            id={alfajor.id}
+            title={alfajor.title}
+            category={alfajor.category}
+            img={alfajor.image}
+            price={alfajor.price}
             />
           )
         })

@@ -70,7 +70,7 @@ const ItemCount = ({stock}) => {
     </div>
     <div>
       <Link to="/cart">
-        <Button className="buttonAddCart" variant='solid' colorScheme='yellow'>Agregar al carrito </Button>
+        <Button className="buttonAddCart" variant='solid' color='blue.600'>Agregar al carrito </Button>
       </Link>
     </div>
   </div>

@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className='cardContainer_detail'>
-      <ItemDetail books={data}/>
+      <ItemDetail alfajores={data}/>
     </div>
   )
 }

@@ -4,7 +4,7 @@
        "title":"Alfajor de Dulce de Leche",
        "category":"Dulce de Leche",
        "description":"Alfajor de Dulce de Leche",
-       "image":"../public/moore.jpg",
+       "image":"../src/assets/image/negro.webp",
        "price":2000,
        "stock":3
     },
@@ -13,7 +13,7 @@
        "title":"Alfajor de Membrillo",
        "category":"Membrillo",
        "description":"Alfajor de Membrillo",
-       "image":"../public/botranger.jpeg",
+       "image":"",
        "price":1500,
        "stock":3
     },

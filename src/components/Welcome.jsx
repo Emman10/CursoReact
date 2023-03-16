@@ -8,7 +8,6 @@ const Welcome = () => {
 <Box maxW='32rem'>
   <Heading mb={4}>Bienvenidos a Alfajores Jorgito</Heading>
   <Link to="/catalogue">
-  <Button size='lg' colorScheme='yellow' mt='24px'>Comenzar</Button>
   </Link>
 </Box>
     </div> 

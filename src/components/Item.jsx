@@ -16,7 +16,7 @@ import {
 const Item = ({id,title,category,img,price}) => {
   return (
     <div key={id}>
-        <Card maxW='sm' className='cardItem' backgroundColor='#fcf3cf'>
+        <Card maxW='sm' className='cardItem' backgroundColor='lightblue'>
           <CardBody>
             <Center>
             <Image
@@ -36,7 +36,7 @@ const Item = ({id,title,category,img,price}) => {
           <Divider />
           <CardFooter>
               <Link to={`/item/${id}`}>
-              <Button variant='solid' colorScheme='yellow'>Detalles</Button>
+              <Button variant='solid' color='blue.600'>Detalles</Button>
               </Link>
           </CardFooter>
         </Card>
