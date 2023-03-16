@@ -1,0 +1,47 @@
+[
+    {
+       "id":1,
+       "title":"Alfajor de Dulce de Leche",
+       "category":"Dulce de Leche",
+       "description":"Alfajor de Dulce de Leche",
+       "image":"../public/moore.jpg",
+       "price":2000,
+       "stock":3
+    },
+    {
+       "id":2,
+       "title":"Alfajor de Membrillo",
+       "category":"Membrillo",
+       "description":"Alfajor de Membrillo",
+       "image":"../public/botranger.jpeg",
+       "price":1500,
+       "stock":3
+    },
+    {
+       "id":3,
+       "title":"Alfajor de Alcayota",
+       "category":"Alcayota",
+       "description":"Alfajor de Membrillo",
+       "image":"../public/curtis.jpg",
+       "price":3000,
+       "stock":3
+    },
+    {
+        "id":4,
+        "title":"Alfajor Blanco de Membrillo",
+        "category":"Membrillo",
+        "description":"Alfajor Blanco de Membrillo",
+        "image":"../public/cardin.png",
+        "price":5000,
+        "stock":3
+    },
+    {
+        "id":5,
+        "title":"Alfajor Blanco de Alcayota",
+        "category":"Alcayota",
+        "description":"Alfajor Blanco de Alcayota",
+        "image":"../public/tomografia.png",
+        "price":2500,
+        "stock":3
+    }
+]
