@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from 'react'
-import Data from "../../data.json"
+import { doc, getDocs, getFirestore} from "firebase/firestore"
 import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router-dom'
 
 
 const ItemDetailContainer = () => {
-  const [data, setData] = useState([])
-
-  const getData = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(Data)
-      },1000)
-    })
-  }
-
+  const [alfajor, setAlfajor] = useState([])
+  const {id} = useParams()
+  
   useEffect(() => {
-    getData().then((data) => setData(data))
-  },[])
+    const db = getFirestore()
+
+    const oneItem = doc(db, "Alfajores",  `${id}`)
+
+    getDocs(oneItem).then((snapshot) => {
+      if (snapshot.exists()) {
+        setAlfajor({id:snapshot.id, ...snapshot.data()})
+      }
+    })
+  }, [])
 
   return (
     <div className='cardContainer_detail'>
-      <ItemDetail alfajores={data}/>
+      <ItemDetail alfajor={alfajor}/>
     </div>
   )
 }
+
 export default ItemDetailContainer

@@ -1,29 +1,31 @@
 import React from 'react';
-import ItemListConteiner from './components/ItemListContainer';
-import NavBar from './components/NavBar';
 import { ChakraProvider } from '@chakra-ui/react';
-import Welcome from './components/Welcome';
-import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import ItemListConteiner from './components/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Cart from './components/Cart'
+import Welcome from './components/Welcome';
 import ItemDetailConteiner from './components/ItemDetailContainer'
+import Cart from './components/Cart'
+import Footer from './components/Footer';
+import ShoppingCartPovider from './context/ShoppingCartPovider'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <ChakraProvider>
-        <NavBar/>
-        <Routes>
-          <Route exact path="/" element={<Welcome/>}/>
-          <Route exact path="/catalogue" element={<ItemListConteiner/>}/>
-          <Route exact path="/category/:category" element={<ItemListConteiner/>}/>
-          <Route exact path="/item/:id" element={<ItemDetailConteiner/>}/>
-          <Route exact path="/cart" element={<Cart/>}/>
-        </Routes>
-
-        <Footer/>
-      </ChakraProvider>
-    </BrowserRouter>
+    <ChakraProvider>
+      <BrowserRouter>
+        <ShoppingCartPovider>
+          <NavBar/>
+            <Routes>
+              <Route exact path="/" element={<Welcome/>}/>
+              <Route exact path="/catalogue" element={<ItemListConteiner/>}/>
+              <Route exact path="/category/:category" element={<ItemListConteiner/>}/>
+              <Route exact path="/item/:id" element={<ItemDetailConteiner/>}/>
+              <Route exact path="/cart" element={<Cart/>}/>
+            </Routes>
+          <Footer/>
+        </ShoppingCartPovider>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 };
 

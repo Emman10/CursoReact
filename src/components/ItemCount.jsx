@@ -1,11 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
-import { Tooltip, Button, ButtonGroup, IconButton, Text } from '@chakra-ui/react'
+import React, {useState } from 'react'
+import { Tooltip, Button, IconButton, Text } from '@chakra-ui/react'
 import { AddIcon, MinusIcon} from '@chakra-ui/icons'
-import { Link } from 'react-router-dom'
 
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, handleClickCart}) => {
   const [count, setCount] = useState(1)
 
   const adicion = () => {
@@ -69,11 +67,10 @@ const ItemCount = ({stock}) => {
     }
     </div>
     <div>
-      <Link to="/cart">
-        <Button className="buttonAddCart" variant='solid' color='blue.600'>Agregar al carrito </Button>
-      </Link>
+        <Button className="buttonAddCart" variant='solid' colorScheme='yellow' onClick={() => handleClickCart(count)}>Agregar al carrito </Button>
     </div>
   </div>
   )
 }
+
 export default ItemCount

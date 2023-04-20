@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import img_cart from '../assets/images/cart.png'
+import { CartContext } from '../context/ShoppingCartPovider'
 
 const CartWidget = () => {
+
+  //Recibo del context la cantidad total de productos seleccionados
+  const {totalQuantity} = useContext(CartContext)
+  
   return (
     <div className='cartContainer'>
-      
-      <span class="material-symbols-outlined">shopping_cart</span>
-        <span>0</span>
+        <img src={img_cart}/>
+        <span>{totalQuantity || ""}</span>
     </div>
   )
 }
 
-export default CartWidget;
+export default CartWidget
