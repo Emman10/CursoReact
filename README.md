@@ -1,3 +1,3 @@
-CursoReact
+Curso de React
 
-<img aling=right src="https://github.com/Emman10/CursoReact/blob/main/src/assets/images/Alfajores%20Jorgito.gif">
+../../src/assets/images/Alfajores-Jorgito.gif
